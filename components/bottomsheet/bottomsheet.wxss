@@ -1,0 +1,46 @@
+.mask {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.bottomSheet {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  height: 340rpx;
+  background: white;
+  border-radius: 88rpx 88rpx 0 0;
+  padding-left: 62rpx;
+  padding-right: 62rpx;
+}
+.bottomSheet .giveRedPacketBtn {
+  margin-top: 73rpx;
+  height: 106rpx;
+  line-height: 106rpx;
+  background: #FF6E25;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  color: white;
+  letter-spacing: 1rpx;
+  text-align: center;
+}
+.bottomSheet .addCommentBtn {
+  margin-top: 31rpx;
+  height: 106rpx;
+  line-height: 106rpx;
+  background: black;
+  border-radius: 48rpx;
+  font-size: 32rpx;
+  color: white;
+  letter-spacing: 1rpx;
+  text-align: center;
+}

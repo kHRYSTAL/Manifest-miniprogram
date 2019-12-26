@@ -1,0 +1,250 @@
+/**index.wxss**/
+.page-bg {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 12rpx;
+    background-image: url("https://api.zhisland.com/impic/T1NVLTBvbv1R4cSCrK_o.png");
+    background-position-y: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 144rpx;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+.container {
+    padding-top: 68rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .logo {
+    margin-left: 68rpx;
+    width: 308rpx;
+    height: 148rpx;
+}
+
+.container .logo-desc {
+    margin-left: 98rpx;
+    width: 158rpx;
+    height: 24rpx;
+}
+
+.container .bottom-tab {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    bottom: 12rpx;
+    background-image: url("https://api.zhisland.com/impic/T1.5hTBXJT1R4cSCrK_o.png");
+    background-position-y: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 136rpx;
+    line-height: 136rpx;
+    left: 40rpx;
+    right: 0rpx;
+}
+
+.container .bottom-tab .home-btn {
+    margin-top: 21rpx;
+    margin-left: 40rpx;
+    width: 294rpx;
+    height: 94rpx;
+}
+
+.container .bottom-tab .add-btn {
+    margin-top: 21rpx;
+    margin-left: 40rpx;
+    width: 98rpx;
+    height: 98rpx;
+}
+
+.container .bottom-tab .mine-btn {
+    margin-top: 21rpx;
+    margin-left: 40rpx;
+    width: 174rpx;
+    height: 94rpx;
+}
+.user-container {
+    margin-left: 52rpx;
+    margin-top: 90rpx;
+
+}
+.user-container-login {
+    display: flex;
+    flex-direction: row;
+}
+
+.dot {
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.avatar {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 4rpx;
+    font-size: 22rpx;
+    color: #FFFFFF;
+}
+
+.desc {
+    margin-top: 8rpx;
+    font-size: 18rpx;
+    color: #727272;
+}
+
+.sex-btn {
+    background: #FF6E25;
+    border-radius: 42rpx;
+    color: white;
+    font-size: 20rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    padding-left: 18rpx;
+    padding-right: 34rpx;
+}
+
+.city-btn {
+    margin-right: 40rpx;
+    margin-left: 24rpx;
+    background: rgba(144,144,144,0.54);
+    border-radius: 42rpx;
+    text-align: center;
+    color: white;
+    font-size: 20rpx;
+    height: 54rpx;
+    line-height: 54rpx;
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+}
+.list-desc {
+    position: relative;
+    flex-direction: row;
+    background-image: url("https://api.zhisland.com/impic/T1MEWTB7_v1R4cSCrK_o.png");
+    background-position-y: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 160rpx;
+    height: 70rpx;
+    margin-top: 74rpx;
+    margin-left: 40rpx;
+    color: #828282;
+    font-size: 10rpx;
+}
+
+.list-desc .sanjiao {
+    position: absolute;
+    right: -20rpx;
+    bottom: 15rpx;
+}
+
+.itemCard {
+    position: relative;
+    margin-top: 25rpx;
+    margin-bottom: 25rpx;
+    position: relative;
+    width: auto;
+    height: 712rpx;
+    margin-left: 80rpx;
+    margin-right: 26rpx;
+    background: #242425;
+    border-radius: 20rpx;
+}
+
+.itemCard .itemCard-image {
+    position: absolute;
+    border-radius: 20rpx;
+    width: auto;
+    height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.itemCard .itemCard-bottom {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 144rpx;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(177deg, rgba(31,31,31, 0.87), rgba(13, 13, 13, 0.87));
+    border-radius: 36rpx 0 22rpx 22rpx;
+}
+
+.itemCard .itemCard-bottom .itemCard-avatar {
+    margin-left: 44rpx;
+    margin-top: 26rpx;
+    width: 90rpx;
+    height: 90rpx;
+    padding: 2px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    border-width: medium;
+    background-image:linear-gradient(90deg,#E14E00,#FFE8CD);
+}
+
+.itemCard .itemCard-bottom .itemCard-desc-container {
+    flex: 1;
+    margin-left: 32rpx;
+    margin-top: 38rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCard .itemCard-bottom .itemCard-desc-container .itemCard-name {
+    font-size: 24rpx;
+    color: white;
+}
+
+.itemCard .itemCard-bottom .itemCard-desc-container .itemCard-desc {
+    margin-top: 3rpx;
+    font-size: 18rpx;
+    color: #727272;
+}
+
+.itemCard .itemCard-bottom .itemCard-addBtn-container {
+    display: flex;
+    background-image: linear-gradient(135deg, rgba(149, 61, 17, 0.38), rgba(187, 78, 23, 0.38));
+    border-radius: 28rpx;
+    margin-top: 41rpx;
+    margin-right: 40rpx;
+    height: 62rpx;
+    line-height: 62rpx;
+    width: 158rpx;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.itemCard .itemCard-bottom .itemCard-addBtn {
+    display: flex;
+    background-image: linear-gradient(135deg, #CC4C0C 0%, #FF691E 100%);
+    border-radius: 24rpx;
+    align-items: center;
+    justify-content: center;
+    height: 52rpx;
+    width: 144rpx;
+    color: white;
+    font-size: 34rpx;
+}
+.itemCard .itemCard-bottom .itemCard-addBtn .addText {
+    margin-top: 17rpx;
+    margin-left: 18rpx;
+    font-size: 18rpx;
+    margin-bottom: 13rpx;
+}
+
+
+
+
+
+
+

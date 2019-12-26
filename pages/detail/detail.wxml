@@ -1,0 +1,51 @@
+<view class=".container">
+    <view class="header">
+        <view class="leftBlock">
+            <image class="logo" src="/assets/img/logo_exclude_text.png"></image>
+            <text class="userOfManifest">大豆哥哥dou 的愿望清单</text>
+        </view>
+        <view class="helpHandle" bindtap="onHelpClick">
+            <text class="iconfont icon-logo-icon" style="font-size: 32rpx;"></text>
+            帮ta实现愿望
+        </view>
+    </view>
+
+    <view class="body">
+        <!--清单详情-->
+        <view class="manifestContainer">
+            <block wx:for="{{manifests}}" wx:for-item="item" wx:for-index='index' wx:key="key">
+                <view class="manifestItem">
+                    <view class="label">
+                        <text class="iconfont icon-lujing"></text>
+                        NO.{{index + 1}}
+                    </view>
+                    <text class="manifestContent">{{item.content}}</text>
+                </view>
+            </block>
+        </view>
+        <!--操作按钮-->
+        <view class="handleContainer">
+            <view class="helpBtn" bindtap="onHelpClick"><text class="iconfont icon-logo-icon" style="font-size: 40rpx;"></text> 帮ta实现愿望</view>
+            <button open-type="share" class='shareBtn'>
+                <text class="iconfont icon-ren" style="font-size: 60rpx;"></text>分享我的清单
+            </button>
+        </view>
+
+        <view class="commentHeader">
+            <image class="logo" src="/assets/img/logo_exclude_text.png"></image>
+            <text class="commentCount">评论 {{commentCount}}</text>
+        </view>
+    </view>
+
+    <comment commentList="{{commentList}}">
+    </comment>
+</view>
+
+<bottomsheet id="bottomSheet"
+             bind:onGiveRedPacketClick="onGiveRedPacketClick"
+             bind:onAddCommentClick="onAddCommentClick"
+></bottomsheet>
+
+<commentdialog id="commentDialog"
+               bind:onSubmitCommentClick="onSubmitCommentClick"
+></commentdialog>

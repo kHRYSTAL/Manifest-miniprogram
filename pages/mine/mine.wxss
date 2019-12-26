@@ -1,0 +1,178 @@
+page {
+  background-image: radial-gradient(at left center, #210f06, black);
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container .lotteryBlock {
+  margin-left: 74rpx;
+  width: 630rpx;
+  height: 258rpx;
+}
+.container .lotteryBlock .lotteryImg {
+  width: 630rpx;
+  height: 258rpx;
+}
+.container .editBlock {
+  position: relative;
+  margin-top: 37rpx;
+  height: 106rpx;
+}
+.container .editBlock .editImg {
+  margin-left: 32rpx;
+  width: 360rpx;
+  height: 106rpx;
+}
+.container .editBlock .editHandle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #FF6E25;
+  border-radius: 36rpx 0 0 36rpx;
+  height: 66rpx;
+  width: 184rpx;
+  font-size: 24rpx;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.8rpx;
+  line-height: 66rpx;
+}
+.container .manifestBlock {
+  margin-top: 54rpx;
+  margin-bottom: 450rpx;
+  position: relative;
+}
+.container .manifestBlock .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -54rpx;
+  bottom: 0;
+  z-index: 10;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8));
+}
+.container .manifestBlock .manifestScrollView {
+  height: 360rpx;
+  overflow: hidden;
+}
+.container .manifestBlock .manifestScrollView .manifestItem {
+  text-align: center;
+  font-size: 24rpx;
+  color: #C0C0C0;
+  letter-spacing: 0.8rpx;
+  margin-bottom: 20rpx;
+}
+.container .manifestAddBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 510rpx;
+  height: 496rpx;
+  background-image: url("https://api.zhisland.com/impic/T1f.ETBKYv1R4cSCrK_o.png");
+  background-position-y: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  color: #828282;
+  font-size: 10rpx;
+}
+.container .manifestAddBlock .addBtn {
+  width: 98rpx;
+  height: 98rpx;
+}
+.container .manifestAddBlock .addText {
+  margin-top: 16rpx;
+  font-size: 22rpx;
+  color: #B0B0B0;
+  letter-spacing: 0.74rpx;
+}
+.container .bottomBtncontainer {
+  position: fixed;
+  left: -30rpx;
+  right: -30rpx;
+  height: 300rpx;
+  bottom: -180rpx;
+  border-radius: 50% 50% 0 0;
+  background: #FF6E25;
+}
+.container .bottomBtncontainer .bottomBtn {
+  display: flex;
+  background: transparent;
+  flex-direction: row;
+  padding-top: 34rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+  font-size: 34rpx;
+  color: #FFFFFF;
+  letter-spacing: 1rpx;
+}
+.container .bottomBtncontainer .bottomBtn::after {
+  border: 0rpx;
+  width: auto;
+  height: auto;
+}
+.container .userContainer {
+  position: fixed;
+  bottom: 140rpx;
+  left: 110rpx;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+}
+.container .userContainer .dot {
+  width: 32rpx;
+  height: 32rpx;
+}
+.container .userContainer .avatar {
+  flex-shrink: 1;
+  width: 88rpx;
+  height: 88rpx;
+  margin-top: 32rpx;
+  border-radius: 50%;
+}
+.container .userContainer .userHandler {
+  flex: 1;
+  flex-shrink: 1;
+  margin-top: 36rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.container .userContainer .userHandler text {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.container .userContainer .userHandler .name {
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+.container .userContainer .userHandler .wechat {
+  font-size: 22rpx;
+  color: #A2A2A2;
+  letter-spacing: 0.4rpx;
+}
+.container .userContainer .userHandler .iconEdit {
+  margin-left: 10rpx;
+  color: white;
+}
+.container .userContainer .aboutUs {
+  margin-top: -25rpx;
+  background: #111111;
+  border-radius: 36rpx 0 0 36rpx;
+  height: 66rpx;
+  width: 184rpx;
+  font-size: 24rpx;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.8rpx;
+  line-height: 66rpx;
+}

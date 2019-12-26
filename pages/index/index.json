@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "navigationbar": "/components/navigationbar/navigationbar"
+  },
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true
+}

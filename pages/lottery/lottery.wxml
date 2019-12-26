@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="dollMachineContainer" bindtap="onClickMachine">
+        <image class="machineContent" src="{{dollMachine}}"></image>
+        <image class="machineContent hide" src="{{dollMachinePreLoad1}}"></image>
+        <image class="machineContent hide" src="{{dollMachinePreLoad2}}"></image>
+        <image class="machineContent hide" src="{{dollMachinePreLoad3}}"></image>
+        <image class="machineContent hide" src="{{dollMachinePreLoad4}}"></image>
+        <image class="machineContent hide" src="{{dollMachinePreLoad5}}"></image>
+        <view class="machineBottom">
+            <text class="iconfont icon-xingbieqianyuanicon"> 获取新年祝福</text>
+        </view>
+    </view>
+
+    <view class="logoContainer">
+        <image class="logo" src="/assets/img/logo.png"></image>
+    </view>
+
+    <!--抽奖弹窗-->
+    <view class="maskView {{showPrompt ? 'show' : 'hide'}}">
+
+        <view class='promptView'>
+
+            <view class="promptContainer">
+                <view class='promptTitleView'>新年上上签</view>
+
+                <view class='promptItemView'>
+                    <text>文案内容什么的
+                        哈哈吼吼哈哈吼吼的</text>
+                </view>
+            </view>
+            <!--底部按钮  -->
+            <view class='bottomBtncontainer'>
+                <button bindtap="onOKClick" class='bottomBtnLeft' hover-class='bottomBtnLeftHover'>好的</button>
+                <button bindtap="onAgainClick" class='bottomBtnRight' hover-class='bottomBtnRightHover'>
+                    <text class="iconfont icon-logo-icon" style="font-size: 32rpx;"></text>
+                    再来一次
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

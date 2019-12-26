@@ -1,0 +1,62 @@
+<!--index.wxml-->
+<navigationbar bgColor="black" title="">
+</navigationbar>
+<view class="page-bg"></view>
+<view class="container">
+    <image class="logo" src="/assets/img/logo.png"></image>
+    <image class="logo-desc" src="/assets/img/logo_desc.png"></image>
+    <!--当前用户展示布局-->
+    <view class="user-container">
+        <view class="user-container-login">
+            <image class="dot" src="/assets/img/dot.png"></image>
+            <view style="flex: 1; display: flex; flex-direction: row; margin-top: 32rpx">
+                <image class="avatar" src="/assets/img/default_avatar.png"></image>
+                <view style="display: flex; flex-direction: column; margin-left: 22rpx">
+                    <text class="name">这里是用户名称</text>
+                    <text class="desc">北京 女</text>
+                </view>
+                <view style="display:flex; flex-direction: row-reverse; flex: 1; align-items: right; text-align: right">
+                    <view class="city-btn">
+                        <text class="iconfont icon-bianzu"></text>
+                        北京
+                    </view>
+                    <view class="sex-btn">
+                        <text class="iconfont icon-xingbieqianyuanicon" style="color: #FFDCCA"></text>
+                        性别：女
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="list-desc">
+            <text class="iconfont icon-qingdanhousanjiao sanjiao"></text>
+        </view>
+    </view>
+    <!--列表布局-->
+    <block wx:if="{{datalist.length > 0}}">
+        <block wx:for="{{datalist}}" wx:for-item="card" wx:key="key">
+            <view class='itemCard' bindtap="onClickItem" data-itemid="{{card.id}}">
+                <image class="itemCard-image" src="https://api.zhisland.com/impic/T1IZETBKxC1R4cSCrK_o.png"></image>
+                <view class="itemCard-bottom">
+                    <image class="itemCard-avatar" src="/assets/img/default_avatar.png"></image>
+                    <view class="itemCard-desc-container">
+                        <text class="itemCard-name">这里是用户名称</text>
+                        <text class="itemCard-desc">北京 女</text>
+                    </view>
+                    <view class="itemCard-addBtn-container">
+                        <view class="itemCard-addBtn">
+                            <text class="iconfont icon-jiahaoyou"></text>
+                            <text class="addText">加好友</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <view style="height: 200rpx"></view>
+    </block>
+    <!--底部按钮-->
+    <view class="bottom-tab">
+        <image class="home-btn" src="/assets/img/home_btn.png"/>
+        <image class="add-btn" src="/assets/img/add_btn.png"/>
+        <image class="mine-btn" src="/assets/img/mine_btn.png" bindtap="onClickMine"/>
+    </view>
+</view>

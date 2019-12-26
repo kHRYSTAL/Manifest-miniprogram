@@ -1,0 +1,7 @@
+<view class='nav-wrap' style="background-color:{{bgColor}};">
+    <view style="height:{{statusBarHeight}}px;"></view>
+    <view class='content'>
+        <view class="title">{{title}}</view>
+    </view>
+    <view wx:if="{{hastop}}" class='padding' style="width:100;height:{{navBarHeight}}px;"></view>
+</view>

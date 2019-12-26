@@ -1,0 +1,15 @@
+<!--屏幕背景变暗的背景  -->
+<view class="mask" bindtap="onMaskClick" wx:if="{{showCommentDialog}}"></view>
+<!--弹出框  -->
+<form bindsubmit='onCommentSubmit'>
+    <view class="commentDialog" wx:if="{{showCommentDialog}}">
+        <text class='title'>{{commentType==0 ? '评论' : '回复'}}</text>
+        <textarea class='textAreaView' name="inputContent"
+                  placeholder-style='font-size: 32rpx;color: #DBDBDB;letter-spacing: 1rpx;'
+                  auto-height
+                  placeholder="点击在此输入" value=""
+                  maxlength='-1'
+        ></textarea>
+        <button form-type='submit' class="submitBtn">确认</button>
+    </view>
+</form>

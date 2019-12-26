@@ -1,0 +1,143 @@
+page {
+  //background-image: radial-gradient(at left center, #210f06, black);
+}
+
+.container {
+  height: 100vh;
+  .header {
+    position: relative;
+    width: 100%;
+    height: 500rpx;
+    background-image: url("https://api.zhisland.com/impic/T1YkETBTCv1R4cSCrK_o.png");
+    background-position-y: 0;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    .leftBlock {
+      position: absolute;
+      left: 0;
+      bottom: 100rpx;
+      display: flex;
+      flex-direction: column;
+      .logo {
+        margin-left: 30rpx;
+        width: 360rpx;
+        height: 64rpx;
+      }
+      .userOfManifest {
+        font-size: 20rpx;
+        color: #A0A0A0;
+        margin-top: 14rpx;
+        letter-spacing: 0.66rpx;
+        margin-left: 72rpx;
+      }
+    }
+    .helpHandle {
+      position: absolute;
+      right: 0;
+      bottom: 20rpx;
+      background: #FF6E25;
+      border-radius: 36rpx 0 0 36rpx;
+      height: 80rpx;
+      width: 280rpx;
+      font-size: 24rpx;
+      color: white;
+      text-align: center;
+      letter-spacing: 0.8rpx;
+      line-height: 80rpx;
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    .manifestContainer {
+      .manifestItem {
+        margin-top: 24rpx;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-left: 64rpx;
+        .label {
+          border-radius: 20rpx;
+          font-size: 20rpx;
+          color: #848484;
+          letter-spacing: 0.66rpx;
+          text-align: center;
+          line-height: 40rpx;
+          background: #1F1F1F;
+          width: 132rpx;
+          height: 40rpx;
+        }
+        .manifestContent {
+          margin-top: 10rpx;
+          margin-left: 122rpx;
+          font-size: 22rpx;
+          color: #FFFFFF;
+          letter-spacing: 0.74rpx;
+        }
+      }
+    }
+
+    .handleContainer {
+      margin-top: 50rpx;
+      display: flex;
+      flex-direction: row;
+      height: 80rpx;
+      .helpBtn {
+        flex-shrink: 1;
+        height: 80rpx;
+        flex: 1;
+        font-size: 28rpx;
+        color: white;
+        letter-spacing: 0.94rpx;
+        text-align: center;
+        line-height: 80rpx;
+        margin-left: 56rpx;
+        background: #FF6E25;
+        border-radius: 47rpx;
+        margin-right: 24rpx;
+      }
+
+      .shareBtn {
+        flex: 1;
+        padding: 0;
+        flex-shrink: 1;
+        text-align: center;
+        margin-left: 24rpx;
+        margin-right: 56rpx;
+        background: #232323;
+        height: 80rpx;
+        line-height: 80rpx;
+        border: 1rpx solid #000000;
+        border-radius: 47rpx;
+        font-size: 28rpx;
+        color: #FFFFFF;
+        letter-spacing: 0.94rpx;
+        &::after {
+          border: 1rpx solid #000000;
+        }
+      }
+    }
+
+    .commentHeader {
+      display: flex;
+      flex-direction: column;
+      .logo {
+        margin-top: 44rpx;
+        margin-left: 30rpx;
+        width: 360rpx;
+        height: 64rpx;
+      }
+      .commentCount {
+        font-size: 22rpx;
+        color: #D8D8D8;
+        letter-spacing: 0.74rpx;
+        margin-left: 72rpx;
+        margin-top: 18rpx;
+      }
+    }
+  }
+}

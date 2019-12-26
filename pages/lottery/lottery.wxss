@@ -1,0 +1,121 @@
+page {
+  background-image: radial-gradient(at left center, #210f06, black);
+}
+.container {
+  height: 100vh;
+}
+.container .dollMachineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96rpx;
+}
+.container .dollMachineContainer .machineContent {
+  height: 532rpx;
+  width: 462rpx;
+}
+.container .dollMachineContainer .machineBottom {
+  display: flex;
+  flex-direction: row;
+  height: 82rpx;
+  width: 450rpx;
+  background: #FF6E25;
+  color: white;
+  border-radius: 0 0 28rpx 28rpx;
+  line-height: 82rpx;
+  letter-spacing: 0.4rpx;
+  font-size: 28rpx;
+  justify-content: center;
+}
+.container .logoContainer {
+  margin-top: 170rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.container .logoContainer .logo {
+  width: 308rpx;
+  height: 148rpx;
+}
+.container .maskView {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.container .maskView .promptView {
+  display: flex;
+  flex-direction: column;
+}
+.container .maskView .promptView .promptContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 40rpx;
+  width: 494rpx;
+  height: 330rpx;
+  margin-top: 320rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .maskView .promptView .promptContainer .promptTitleView {
+  margin-top: 80rpx;
+  font-size: 32rpx;
+  color: black;
+  letter-spacing: 1rpx;
+}
+.container .maskView .promptView .promptContainer .promptItemView {
+  margin-top: 44rpx;
+  font-size: 28rpx;
+  color: #4B4B4B;
+  letter-spacing: 1rpx;
+  text-align: center;
+  margin-left: 116rpx;
+  margin-right: 116rpx;
+}
+.container .maskView .promptView .bottomBtncontainer {
+  margin-top: 22rpx;
+  width: 494rpx;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+}
+.container .maskView .promptView .bottomBtncontainer .bottomBtnLeft {
+  background: #232323;
+  margin-left: 0;
+  width: 186rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #000000;
+  border-radius: 47rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0.94px;
+}
+.container .maskView .promptView .bottomBtncontainer .bottomBtnLeft::after {
+  border: 1rpx solid #000000;
+}
+.container .maskView .promptView .bottomBtncontainer .bottomBtnRight {
+  background: #FF6E25;
+  margin-left: 60rpx;
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #FF6E25;
+  border-radius: 47rpx;
+  font-size: 28rpx;
+  color: #FFFFFF;
+  letter-spacing: 0.94rpx;
+}
+.container .maskView .promptView .bottomBtncontainer .bottomBtnRight::after {
+  border: 1rpx solid #FF6E25;
+}
+.container .hide {
+  display: none;
+}

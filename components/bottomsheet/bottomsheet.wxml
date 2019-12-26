@@ -1,0 +1,7 @@
+<!--屏幕背景变暗的背景  -->
+<view class="mask" bindtap="onMaskClick" wx:if="{{showBottomSheet}}"></view>
+<!--弹出框  -->
+<view animation="{{animation}}" class="bottomSheet" wx:if="{{showBottomSheet}}">
+    <view class="giveRedPacketBtn" bindtap="onGiveRedPacketClick">发红包帮ta实现愿望</view>
+    <view class="addCommentBtn" bindtap="onAddCommentClick">评论</view>
+</view>

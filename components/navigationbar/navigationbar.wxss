@@ -1,0 +1,21 @@
+.nav-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    color: white;
+    height: 44px;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-weight: 500;
+}

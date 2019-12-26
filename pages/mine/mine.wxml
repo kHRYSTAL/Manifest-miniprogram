@@ -1,0 +1,54 @@
+<view class="container">
+    <!--底部分享按钮-->
+    <view class='bottomBtncontainer'>
+        <button bindtap="onShareManifestClick" class='bottomBtn' hover-class='bottomBtnHover'
+                disabled="{{shareDisabled}}">分享我的清单
+            <text class="iconfont icon-fenxiangicon"></text>
+        </button>
+    </view>
+    <!--底部用户模块-->
+    <view class="userContainer">
+        <image class="dot" src="/assets/img/dot.png"></image>
+        <image class="avatar" src="/assets/img/default_avatar.png"></image>
+        <view class="userHandler">
+            <text class="name">这里是用户名称</text>
+            <view style="display: flex; flex-direction: row">
+                <text class="wechat">微信号: uhfejoppj33456</text>
+                <text class="iconfont icon-bianjiicon iconEdit"></text>
+            </view>
+        </view>
+        <view class="aboutUs">
+            关于我们
+        </view>
+    </view>
+
+    <view class="lotteryBlock">
+        <image class="lotteryImg" src="/assets/img/mine_top.png" bindtap="onLotteryClick"/>
+    </view>
+
+    <!--编辑模块-->
+    <view class="editBlock">
+        <image class="editImg" src="/assets/img/mine_middle.png"/>
+        <view class="editHandle" bindtap="onEditClick" wx:if="{{manifests.length > 0}}">
+            <text class="iconfont icon-bianjiyuanwangicon iconEdit"></text>
+            编辑愿望
+        </view>
+    </view>
+
+    <!--清单模块-->
+    <view class="manifestBlock" wx:if="{{manifests.length > 0}}">
+        <scroll-view scroll-y="true" class='manifestScrollView' bindscroll="onScroll" scroll-top="{{scrollTop}}">
+            <block wx:for="{{manifests}}" wx:for-item="item" wx:for-index='index' wx:key="key">
+                    <view class='manifestItem'>
+                        <text>NO.{{index + 1}} </text>
+                        <text>{{item.content}}</text>
+                    </view>
+            </block>
+        </scroll-view>
+        <view class="mask" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></view>
+    </view>
+    <view class="manifestAddBlock" wx:else>
+        <image class="addBtn" src="/assets/img/add_btn.png" bindtap="onEditClick"/>
+        <text class="addText">添加愿望</text>
+    </view>
+</view>
