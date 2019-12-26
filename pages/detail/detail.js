@@ -23,6 +23,7 @@ Page({
     onReady() {
         this.bottomSheet = this.selectComponent('#bottomSheet');
         this.commentDialog = this.selectComponent('#commentDialog');
+        this.sendRedPacketDialog = this.selectComponent('#sendRedPacketDialog');
     },
 
     onHelpClick() {
@@ -30,7 +31,7 @@ Page({
     },
 
     onGiveRedPacketClick() {
-        // TODO 点击发红包
+        this.sendRedPacketDialog.showRedPacketDialog();
     },
 
     onAddCommentClick() {
@@ -39,5 +40,9 @@ Page({
 
     onSubmitCommentClick(inputData) {
         console.log(inputData);
+    },
+
+    onGiveRedPacketSubmit(moneyData) {
+        console.log(moneyData);
     }
 });

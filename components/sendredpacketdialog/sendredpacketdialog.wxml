@@ -1,0 +1,14 @@
+<!--屏幕背景变暗的背景  -->
+<view class="mask" bindtap="onMaskClick" wx:if="{{showRedPacketDialog}}"></view>
+<!--弹出框  -->
+<form bindsubmit='onGiveRedPacketSubmit'>
+    <view class="giveRedPacketDialog" wx:if="{{showRedPacketDialog}}">
+        <text class='title'>帮ta实现愿望</text>
+        <image src="https://api.zhisland.com/impic/T1W5ETBCWv1R4cSCrK_o.png" class="redPacketImg"></image>
+        <view class="inputContainer">
+            <input name="money" class="moneyInput" type='number' placeholder-class='moneyPlaceHolder' placeholder='0.00'/>
+            <text class="yuan">元</text>
+        </view>
+        <button form-type='submit' class="okBtn">确认</button>
+    </view>
+</form>

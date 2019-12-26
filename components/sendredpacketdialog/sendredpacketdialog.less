@@ -1,0 +1,74 @@
+.mask {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.giveRedPacketDialog {
+  position: fixed;
+  top: 220rpx;
+  background: #FBFBFB;
+  border-radius: 40rpx;
+  left: 128rpx;
+  right: 128rpx;
+  height: 648rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1999;
+  .title {
+    margin-top: 53rpx;
+    font-size: 32rpx;
+    color: #1A1A1A;
+    letter-spacing: 1rpx;
+  }
+
+  .redPacketImg {
+    margin-top: 66rpx;
+    width: 312rpx;
+    height: 206rpx;
+  }
+  .inputContainer {
+    margin-top: 40rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .moneyInput {
+      text-align: center;
+      width: 200rpx;
+      height: 70rpx;
+      background: #EEEEEE;
+      border: 1rpx solid #D2D2D2;
+      border-radius: 14rpx;
+    }
+    .yuan {
+      margin-left: 20rpx;
+      font-size: 36rpx;
+      color: black;
+      letter-spacing: 1.2rpx;
+    }
+  }
+
+  .moneyPlaceHolder {
+    font-size: 36rpx;
+    color: #DBDBDB;
+    letter-spacing: 1rpx;
+  }
+
+  .okBtn {
+    text-align: center;
+    margin-top: 73rpx;
+    background: #FF6E25;
+    border-radius: 47rpx;
+    height: 64rpx;
+    width:154rpx;
+    font-size: 32rpx;
+    color: white;
+    letter-spacing: 1rpx;
+    line-height: 64rpx;
+  }
+}

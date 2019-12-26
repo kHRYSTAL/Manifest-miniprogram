@@ -3,6 +3,7 @@
   "usingComponents": {
     "comment": "/components/comment/comment",
     "commentdialog": "/components/commentdialog/commentdialog",
-    "bottomsheet": "/components/bottomsheet/bottomsheet"
+    "bottomsheet": "/components/bottomsheet/bottomsheet",
+    "sendredpacketdialog": "/components/sendredpacketdialog/sendredpacketdialog"
   }
 }

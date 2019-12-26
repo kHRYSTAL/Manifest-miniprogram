@@ -49,3 +49,8 @@
 <commentdialog id="commentDialog"
                bind:onSubmitCommentClick="onSubmitCommentClick"
 ></commentdialog>
+
+
+<sendredpacketdialog id="sendRedPacketDialog"
+               bind:onGiveRedPacketSubmit="onGiveRedPacketSubmit"
+></sendredpacketdialog>
