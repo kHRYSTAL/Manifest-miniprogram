@@ -5,7 +5,7 @@ import {getRandomMoney} from '../../utils/moneyRandom';
 
 const MAX_EXCHANGE_STEP = 2; // 换一换最大步骤数为3次
 // Android查看匿名弹窗需求:
-// {@link https://api.zhisland.com/impic/T1UCVTB7h_1R4cSCrK_.png}
+// {@link https://api.zhisland.com/impic/T1UCVTB7h_1R4cSCrK_o.png}
 Component({
 
     data: {
