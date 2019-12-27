@@ -1,0 +1,27 @@
+<!--屏幕背景变暗的背景  -->
+<view class="mask" bindtap="onMaskClick" wx:if="{{showAnonymousDialog}}"></view>
+<!--弹出框  -->
+<form bindsubmit='onPayMoneySubmit'>
+    <view class="watchAnonymousDialog" wx:if="{{showAnonymousDialog}}">
+        <text class='title'>查看匿名</text>
+        <view class="stepWrapper">
+            <text class="smallTip">最小金额</text>
+            <view class="stepContainer">
+                <view class="step {{step==0 ? 'stepCurrent' : ''}}">1</view>
+                <view class="stepDivider"></view>
+                <view class="step {{step==1 ? 'stepCurrent' : ''}}">2</view>
+                <view class="stepDivider"></view>
+                <view class="step {{step==2 ? 'stepCurrent' : ''}}">3</view>
+            </view>
+        </view>
+        <view class="changeContainer">
+            <image src="https://api.zhisland.com/impic/T1W5ETBCWv1R4cSCrK_o.png" class="changeImg"></image>
+            <button bindtap="onExchangeClick" wx:if="{{count<2}}">换一换</button>
+        </view>
+        <view class="money" data-money="{{money}}">{{money}}元</view>
+        <view class="desc" wx:if="{{count<2}}">
+            <text>换两次必出最小金额红包</text>
+        </view>
+        <button form-type='submit' class="okBtn">确认查看</button>
+    </view>
+</form>

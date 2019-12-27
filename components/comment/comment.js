@@ -1,8 +1,8 @@
 // pages/listen/comment/comment.js
 Component({
     /**
-   * 组件的属性列表
-   */
+     * 组件的属性列表
+     */
     properties: {
         commentList: {
             type: Array
@@ -10,21 +10,24 @@ Component({
     },
 
     /**
-   * 组件的初始数据
-   */
-    data: {
-
-    },
+     * 组件的初始数据
+     */
+    data: {},
 
     /**
-   * 组件的方法列表
-   */
+     * 组件的方法列表
+     */
     methods: {
-        onReplyButton (e) {
-            this.triggerEvent('onReply', e.currentTarget.dataset.item);
+        onReplyClick(item) {
+            let commentId = item.currentTarget.dataset.commentId;
+            let replyId = item.currentTarget.dataset.replyId;
+            this.triggerEvent('onReplyClick', {commentId: commentId, replyId: replyId});
         },
-        onShareButton (e) {
-            this.triggerEvent('onShare', e.currentTarget.dataset.item);
+
+        onAvatarClick(item) {
+            let commentId = item.currentTarget.dataset.commentId;
+            let replyId = item.currentTarget.dataset.replyId;
+            this.triggerEvent('onWatchAnonymousClick', {commentId: commentId, replyId: replyId});
         }
     }
 });

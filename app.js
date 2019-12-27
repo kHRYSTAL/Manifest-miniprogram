@@ -6,19 +6,25 @@ import {getSystemInfo} from './common/service/system-service';
 import {globalData} from "./utils/global-data";
 
 App({
-    onLaunch (options) {
+    onLaunch(options) {
         console.log('=====App====onLaunch============', JSON.stringify(options));
         wxCheckSession(options);
         setTimeout(initRouter, 0);
         getSystemInfo().then(res => {
-            console.log('11111', res);
-            console.log('11111', res.statusBarHeight);
+            console.log('===getSystemInfo===', res);
             globalData('statusBarHeight', res.statusBarHeight);
             globalData('navBarHeight', 44 + res.statusBarHeight);
+            if (res.platform == "devtools") {
+                globalData('platform', 'android');
+            } else if (res.platform == "ios") {
+                globalData('platform', 'ios');
+            } else if (res.platform == "android") {
+                globalData('platform', 'android');
+            }
         })
 
     },
-    onShow (options) {
+    onShow(options) {
         console.log('=====App====onShow============', JSON.stringify(options));
         // 此处获取场景值
     },

@@ -1,0 +1,128 @@
+.mask {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+.watchAnonymousDialog {
+  position: fixed;
+  top: 220rpx;
+  background: #FBFBFB;
+  border-radius: 40rpx;
+  left: 128rpx;
+  right: 128rpx;
+  height: 700rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1999;
+}
+.watchAnonymousDialog .title {
+  font-size: 32rpx;
+  color: #1A1A1A;
+  letter-spacing: 1px;
+  margin-top: 30rpx;
+}
+.watchAnonymousDialog .stepWrapper {
+  margin-top: 14rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.watchAnonymousDialog .stepWrapper .smallTip {
+  position: absolute;
+  right: -16rpx;
+  top: 0;
+  text-align: center;
+  line-height: 26rpx;
+  border: 2rpx solid #FF6E25;
+  border-radius: 48rpx;
+  width: 84rpx;
+  height: 26rpx;
+  font-size: 14rpx;
+  color: #FF6E25;
+  letter-spacing: 0.5rpx;
+}
+.watchAnonymousDialog .stepWrapper .stepContainer {
+  margin-top: 36rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.watchAnonymousDialog .stepWrapper .stepContainer .step {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+  border: 6rpx solid #A8A8A8;
+  font-size: 36Rpx;
+  color: #A8A8A8;
+  letter-spacing: 1.2rpx;
+  text-align: center;
+}
+.watchAnonymousDialog .stepWrapper .stepContainer .stepCurrent {
+  background: #FF6E25;
+  border: 6rpx solid #000000;
+  color: #FFFFFF;
+}
+.watchAnonymousDialog .stepWrapper .stepContainer .stepDivider {
+  margin-left: 8rpx;
+  margin-right: 8rpx;
+  background: #A2A2A2;
+  border-radius: 16rpx;
+  width: 84rpx;
+  height: 2rpx;
+}
+.watchAnonymousDialog .changeContainer {
+  position: relative;
+  margin-top: 34rpx;
+}
+.watchAnonymousDialog .changeContainer .changeImg {
+  width: 312rpx;
+  height: 206rpx;
+}
+.watchAnonymousDialog .changeContainer button {
+  position: absolute;
+  background: #FF6E25;
+  text-align: center;
+  line-height: 58rpx;
+  border-radius: 47rpx;
+  width: 152rpx;
+  height: 58rpx;
+  right: -60rpx;
+  bottom: -8rpx;
+  font-size: 28rpx;
+  color: white;
+  letter-spacing: 1rpx;
+}
+.watchAnonymousDialog .money {
+  margin-top: 18rpx;
+  font-size: 36rpx;
+  color: black;
+  letter-spacing: 1.2rpx;
+}
+.watchAnonymousDialog .desc {
+  display: flex;
+  flex-direction: column;
+}
+.watchAnonymousDialog .desc text {
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0.8rpx;
+  text-align: center;
+}
+.watchAnonymousDialog .okBtn {
+  margin-top: 42rpx;
+  background: #1D1D1D;
+  border-radius: 47rpx;
+  width: 196rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: white;
+  letter-spacing: 1rpx;
+}

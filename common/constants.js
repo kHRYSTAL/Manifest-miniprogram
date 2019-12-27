@@ -75,6 +75,7 @@ export const SERVICE_ERROR_STATUS = {
 // region 本地存储key
 export const STORAGE_SESSION = 'storage_session';
 export const STORAGE_USERINFO = 'storage_userinfo';
+export const STORAGE_DATE_SHARE = 'storage_date_share';
 // endregion
 
 // 支付状态

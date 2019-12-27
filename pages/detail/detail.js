@@ -1,5 +1,9 @@
+import toast from '../../common/service/toast-service';
+import {globalData} from "../../utils/global-data";
+
 Page({
     data: {
+        detailId: 0,
         manifests: [
             {content: '复习英语，争取能读5本简单的原文书'},
             {content: '嘻嘻哈哈后复习英语，争取能读5本简单的原文书'},
@@ -15,15 +19,20 @@ Page({
         commentCount: 6,
         commentList: [
             {
-                replyList:[{}, {}, {}]
-            },{},{}
+                replyList: [{}, {}, {}]
+            }, {}, {}
         ]
+    },
+
+    onLoad() {
+        // page.hideShareMenu(); // 禁用右上角分享
     },
 
     onReady() {
         this.bottomSheet = this.selectComponent('#bottomSheet');
         this.commentDialog = this.selectComponent('#commentDialog');
         this.sendRedPacketDialog = this.selectComponent('#sendRedPacketDialog');
+        this.watchAnonymousDialogAndroid = this.selectComponent('#watchAnonymousDialogAndroid');
     },
 
     onHelpClick() {
@@ -35,7 +44,7 @@ Page({
     },
 
     onAddCommentClick() {
-        this.commentDialog.showCommentDialog(1, '');
+        this.commentDialog.showCommentDialog(0, '');
     },
 
     onSubmitCommentClick(inputData) {
@@ -44,5 +53,47 @@ Page({
 
     onGiveRedPacketSubmit(moneyData) {
         console.log(moneyData);
+    },
+
+    onPayMoneySubmit(payData) {
+        console.log('发起支付', payData);
+    },
+
+    onReplyClick(reply) {
+        console.log('点击回复', reply);
+        this.commentDialog.showCommentDialog(1, '');
+    },
+
+    onWatchAnonymousClick(anonymous) {
+        console.log('点击匿名头像', anonymous);
+        if (globalData('platform') == 'android') {
+            // 弹出Android 查看匿名头像分享窗
+            this.watchAnonymousDialogAndroid.showAnonymousDialog('', '');
+        } else {
+            // TODO 弹出iOS 查看匿名头像分享窗
+        }
+    },
+
+    onShareAppMessage() {
+        let path = '/pages/detail/detail?detailId=' + this.data.detailId;
+        console.log('执行分享成功');
+        if (globalData('platform') == 'android') {
+
+        } else {
+            // TODO iOS 查看匿名头像分享成功 发送服务器请求 然后刷新页面
+        }
+        return {
+            title: '分享详情',
+            path: path,
+            success: (res) => {
+                console.log('分享成功', res);
+            },
+            fail: (err) => {
+                console.log('分享失败', err);
+                toast.showLoadingToast('分享失败');
+            }
+        }
     }
+
+
 });

@@ -25,9 +25,13 @@
         </view>
         <!--操作按钮-->
         <view class="handleContainer">
-            <view class="helpBtn" bindtap="onHelpClick"><text class="iconfont icon-logo-icon" style="font-size: 40rpx;"></text> 帮ta实现愿望</view>
+            <view class="helpBtn" bindtap="onHelpClick">
+                <text class="iconfont icon-logo-icon" style="font-size: 40rpx;"></text>
+                帮ta实现愿望
+            </view>
             <button open-type="share" class='shareBtn'>
-                <text class="iconfont icon-ren" style="font-size: 60rpx;"></text>分享我的清单
+                <text class="iconfont icon-ren" style="font-size: 60rpx;"></text>
+                分享我的清单
             </button>
         </view>
 
@@ -37,20 +41,26 @@
         </view>
     </view>
 
-    <comment commentList="{{commentList}}">
+    <comment commentList="{{commentList}}"
+             bind:onReplyClick="onReplyClick"
+             bind:onWatchAnonymousClick="onWatchAnonymousClick">
     </comment>
 </view>
 
 <bottomsheet id="bottomSheet"
              bind:onGiveRedPacketClick="onGiveRedPacketClick"
-             bind:onAddCommentClick="onAddCommentClick"
-></bottomsheet>
+             bind:onAddCommentClick="onAddCommentClick">
+</bottomsheet>
 
 <commentdialog id="commentDialog"
-               bind:onSubmitCommentClick="onSubmitCommentClick"
-></commentdialog>
+               bind:onSubmitCommentClick="onSubmitCommentClick">
+</commentdialog>
 
 
 <sendredpacketdialog id="sendRedPacketDialog"
-               bind:onGiveRedPacketSubmit="onGiveRedPacketSubmit"
-></sendredpacketdialog>
+                     bind:onGiveRedPacketSubmit="onGiveRedPacketSubmit">
+</sendredpacketdialog>
+
+<watchanonymousdialogandroid id="watchAnonymousDialogAndroid"
+                      bind:onPayMoneySubmit="onPayMoneySubmit">
+</watchanonymousdialogandroid>
