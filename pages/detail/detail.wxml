@@ -62,5 +62,10 @@
 </sendredpacketdialog>
 
 <watchanonymousdialogandroid id="watchAnonymousDialogAndroid"
-                      bind:onPayMoneySubmit="onPayMoneySubmit">
+                             bind:onPayMoneySubmit="onPayMoneySubmit">
 </watchanonymousdialogandroid>
+
+
+<watchanonymousdialogios id="watchAnonymousDialogiOS"
+                         bind:onDlgShareSuccessByiOS="onDlgShareSuccessByiOS">
+</watchanonymousdialogios>

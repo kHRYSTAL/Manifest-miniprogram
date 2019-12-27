@@ -5,6 +5,7 @@
     "commentdialog": "/components/commentdialog/commentdialog",
     "bottomsheet": "/components/bottomsheet/bottomsheet",
     "sendredpacketdialog": "/components/sendredpacketdialog/sendredpacketdialog",
-    "watchanonymousdialogandroid": "/components/watchanonymousdialogandroid/watchanonymousdialogandroid"
+    "watchanonymousdialogandroid": "/components/watchanonymousdialogandroid/watchanonymousdialogandroid",
+    "watchanonymousdialogios": "/components/watchanonymousdialogios/watchanonymousdialogios"
   }
 }

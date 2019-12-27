@@ -15,7 +15,7 @@ App({
             globalData('statusBarHeight', res.statusBarHeight);
             globalData('navBarHeight', 44 + res.statusBarHeight);
             if (res.platform == "devtools") {
-                globalData('platform', 'android');
+                globalData('platform', 'ios');
             } else if (res.platform == "ios") {
                 globalData('platform', 'ios');
             } else if (res.platform == "android") {

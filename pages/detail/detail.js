@@ -33,6 +33,7 @@ Page({
         this.commentDialog = this.selectComponent('#commentDialog');
         this.sendRedPacketDialog = this.selectComponent('#sendRedPacketDialog');
         this.watchAnonymousDialogAndroid = this.selectComponent('#watchAnonymousDialogAndroid');
+        this.watchAnonymousDialogiOS = this.selectComponent('#watchAnonymousDialogiOS');
     },
 
     onHelpClick() {
@@ -67,20 +68,23 @@ Page({
     onWatchAnonymousClick(anonymous) {
         console.log('点击匿名头像', anonymous);
         if (globalData('platform') == 'android') {
-            // 弹出Android 查看匿名头像分享窗
+            // 弹出Android 查看匿名头像付费窗
             this.watchAnonymousDialogAndroid.showAnonymousDialog('', '');
         } else {
-            // TODO 弹出iOS 查看匿名头像分享窗
+            // 弹出iOS 查看匿名头像付费窗
+            this.watchAnonymousDialogiOS.showAnonymousDialog('', '')
         }
+    },
+
+    onDlgShareSuccessByiOS(anonymous) {
+        console.log('微信分享成功 查看匿名人', anonymous);
     },
 
     onShareAppMessage() {
         let path = '/pages/detail/detail?detailId=' + this.data.detailId;
-        console.log('执行分享成功');
-        if (globalData('platform') == 'android') {
-
-        } else {
-            // TODO iOS 查看匿名头像分享成功 发送服务器请求 然后刷新页面
+        if (globalData('platform') == 'ios') {
+            console.log('iOS执行分享成功');
+            this.watchAnonymousDialogiOS.onShareSuccess()
         }
         return {
             title: '分享详情',

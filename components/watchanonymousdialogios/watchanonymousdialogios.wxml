@@ -1,0 +1,10 @@
+<!--屏幕背景变暗的背景  -->
+<view class="mask" bindtap="onMaskClick" wx:if="{{showAnonymousDialog}}"></view>
+<!--弹出框  -->
+<view class="watchAnonymousDialog" wx:if="{{showAnonymousDialog}}">
+    <text class='title'>分享到群内即可查看该匿名用户</text>
+    <view class="btnContainer">
+        <button class="backBtn" bindtap="onCancelClick">溜了</button>
+        <button open-type="share" class="okBtn">查明真相</button>
+    </view>
+</view>

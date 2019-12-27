@@ -1,0 +1,66 @@
+.mask {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+
+.watchAnonymousDialog {
+  position: fixed;
+  top: 220rpx;
+  background: #FBFBFB;
+  border-radius: 40rpx;
+  left:68rpx;
+  right:68rpx;
+  height: 340rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1999;
+  .title {
+    font-size: 32rpx;
+    color: #1A1A1A;
+    letter-spacing: 2.5rpx;
+    margin-top: 88rpx;
+  }
+
+  .btnContainer {
+    margin-top: 102rpx;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .backBtn {
+      flex: 1;
+      margin-left: 58rpx;
+      margin-right: 10rpx;
+      height: 74rpx;
+      background: #232323;
+      border-radius: 47rpx;
+      font-size: 28rpx;
+      color: white;
+      letter-spacing: 1rpx;
+      text-align: center;
+    }
+
+    .okBtn {
+      flex: 1;
+      margin-left: 10rpx;
+      margin-right: 58rpx;
+      height: 74rpx;
+      background: #FF6E25;
+      border-radius: 47rpx;
+      font-size: 28rpx;
+      color: white;
+      letter-spacing: 1rpx;
+      text-align: center;
+    }
+  }
+}
