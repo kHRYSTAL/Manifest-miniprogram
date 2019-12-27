@@ -19,7 +19,7 @@
             <button bindtap="onExchangeClick" wx:if="{{count<2}}">换一换</button>
         </view>
         <view class="money" data-money="{{money}}">{{money}}元</view>
-        <view class="desc" wx:if="{{count<2}}">
+        <view class="desc">
             <text>换两次必出最小金额红包</text>
         </view>
         <button form-type='submit' class="okBtn">确认查看</button>
