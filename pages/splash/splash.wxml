@@ -1,0 +1,2 @@
+<image class="img" src='/assets/img/splash.gif' binderror="onImageLoadError"
+             bindload="onImageLoadSuccess"></image>

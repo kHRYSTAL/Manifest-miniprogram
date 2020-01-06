@@ -3,7 +3,7 @@
  */
 import {CHANNEL, ENVIRONMENT} from './config';
 
-export const APP_ID = ''; // TODO
+export const APP_ID = 'wx0e409c050e4a62cf';
 
 /**
  * 格式化url占位符
@@ -76,6 +76,7 @@ export const SERVICE_ERROR_STATUS = {
 export const STORAGE_SESSION = 'storage_session';
 export const STORAGE_USERINFO = 'storage_userinfo';
 export const STORAGE_DATE_SHARE = 'storage_date_share';
+export const STORAGE_SPLASH_COUNT = 'storage_splash_count';
 // endregion
 
 // 支付状态

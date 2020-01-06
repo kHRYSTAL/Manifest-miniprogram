@@ -1,5 +1,6 @@
 //index.js
 import page from '../../common/service/page-service';
+
 Page({
     data: {
         datalist: [{}, {}]
