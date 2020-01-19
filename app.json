@@ -4,7 +4,8 @@
     "pages/index/index",
     "pages/lottery/lottery",
     "pages/mine/mine",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/edit/edit"
   ],
   "window": {
     "backgroundTextStyle": "light",

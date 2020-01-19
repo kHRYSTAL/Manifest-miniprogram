@@ -1,0 +1,155 @@
+.tips {
+  margin-top: 7rpx;
+  text-align: center;
+  font-size: 20rpx;
+  color: #4F4F4F;
+  letter-spacing: 0.66rpx;
+}
+
+.manifestBlock {
+  .manifestItem {
+    margin-top: 24rpx;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 64rpx;
+    .label {
+      border-radius: 20rpx;
+      font-size: 20rpx;
+      color: #848484;
+      letter-spacing: 0.66rpx;
+      text-align: center;
+      line-height: 40rpx;
+      background: #1F1F1F;
+      width: 132rpx;
+      height: 40rpx;
+    }
+    .inputContainer {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10rpx;
+      margin-left: 122rpx;
+      font-size: 22rpx;
+      color: #FFFFFF;
+      letter-spacing: 0.74rpx;
+      .manifestContent {
+        flex: 1;
+      }
+      .delete {
+        margin-right: 20rpx;
+        margin-left: 20rpx;
+        color: #848484;
+      }
+    }
+  }
+}
+
+.manifestAddBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 510rpx;
+  height: 496rpx;
+  background-image: url("https://api.zhisland.com/impic/T1f.ETBKYv1R4cSCrK_o.png");
+  background-position-y: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  color: #828282;
+  font-size: 10rpx;
+  .addBtn {
+    width: 98rpx;
+    height: 98rpx;
+  }
+  .addText {
+    margin-top: 16rpx;
+    font-size: 22rpx;
+    color: #B0B0B0;
+    letter-spacing: 0.74rpx;
+  }
+}
+
+.holder {
+  height: 400rpx;
+}
+
+.userContainer {
+  background: black;
+  z-index: 10;
+  position: fixed;
+  bottom: 140rpx;
+  left: 110rpx;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  .dot {
+    width: 32rpx;
+    height: 32rpx;
+  }
+  .avatar {
+    flex-shrink: 1;
+    width: 88rpx;
+    height: 88rpx;
+    margin-top: 32rpx;
+    border-radius: 50%;
+  }
+  .userHandler {
+    flex: 1;
+    flex-shrink: 1;
+    margin-top: 36rpx;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+    text {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+    }
+    .name {
+      font-size: 32rpx;
+      color: #FFFFFF;
+    }
+    .wechat {
+      font-size: 22rpx;
+      color: #A2A2A2;
+      letter-spacing: 0.4rpx;
+    }
+    .iconEdit {
+      margin-left: 10rpx;
+      color: white;
+    }
+  }
+}
+
+.bottomBtncontainer {
+  z-index: 10;
+  position: fixed;
+  left: -30rpx;
+  right: -30rpx;
+  height: 300rpx;
+  bottom: -180rpx;
+  border-radius: 50% 50% 0 0;
+  background: #FF6E25;
+  .bottomBtn {
+    display: flex;
+    background: transparent;
+    flex-direction: row;
+    padding-top: 34rpx;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    font-size: 34rpx;
+    color: #FFFFFF;
+    letter-spacing: 1rpx;
+    &::after {
+      border: 0rpx;
+      width: auto;
+      height: auto;
+    }
+  }
+}

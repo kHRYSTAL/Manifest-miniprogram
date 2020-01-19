@@ -1,0 +1,43 @@
+<view class="tips">至少填写六项</view>
+<view id="container">
+    <view class="manifestBlock" wx:if="{{manifestList.length > 0}}">
+        <block wx:for="{{manifestList}}" wx:for-item="content" wx:for-index='index' wx:key="key">
+            <view class="manifestItem">
+                <view class="label">
+                    <text class="iconfont icon-lujing"></text>
+                    NO.{{index + 1}}
+                </view>
+                <view class="inputContainer">
+                    <input class='manifestContent' data-id="{{index}}" placeholder="请填写" value="{{content}}"
+                           bindinput='onInputTextChange'></input>
+                    <text wx:if="{{index != 0}}" class="delete" data-id="{{index}}" bindtap="onDeleteClick">删除</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="manifestAddBlock" wx:if="{{showAddBtn}}">
+        <image class="addBtn" src="/assets/img/add_btn.png" bindtap="onAddClick"/>
+        <text class="addText">添加愿望</text>
+    </view>
+    <view class="holder"></view>
+</view>
+<!--底部用户模块-->
+<view class="userContainer">
+    <image class="dot" src="/assets/img/dot.png"></image>
+    <image class="avatar" src="/assets/img/default_avatar.png"></image>
+    <view class="userHandler">
+        <text class="name">这里是用户名称</text>
+        <view style="display: flex; flex-direction: row">
+            <text class="wechat">微信号: uhfejoppj33456</text>
+            <text class="iconfont icon-bianjiicon iconEdit"></text>
+        </view>
+    </view>
+</view>
+
+<!--底部保存按钮-->
+<view class='bottomBtncontainerBg'>
+    <view class='bottomBtncontainer'>
+        <button bindtap="onSaveManifestClick" class='bottomBtn' hover-class='bottomBtnHover'>保存
+        </button>
+    </view>
+</view>
