@@ -40,6 +40,10 @@ Page({
         this.bottomSheet.showBottomSheet();
     },
 
+    onAddFriendClick() {
+        console.log('点击加好友');
+    },
+
     onGiveRedPacketClick() {
         this.sendRedPacketDialog.showRedPacketDialog();
     },

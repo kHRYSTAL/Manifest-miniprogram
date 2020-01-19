@@ -48,6 +48,7 @@
 </view>
 
 <bottomsheet id="bottomSheet"
+             bind:onAddFriendClick="onAddFriendClick"
              bind:onGiveRedPacketClick="onGiveRedPacketClick"
              bind:onAddCommentClick="onAddCommentClick">
 </bottomsheet>

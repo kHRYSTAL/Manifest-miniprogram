@@ -72,6 +72,11 @@ Component({
         onAddCommentClick() {
             this.hideBottomSheet();
             this.triggerEvent('onAddCommentClick');
+        },
+
+        onAddFriendClick() {
+            this.hideBottomSheet();
+            this.triggerEvent('onAddFriendClick');
         }
 
 
