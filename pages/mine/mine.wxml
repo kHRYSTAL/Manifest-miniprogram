@@ -27,7 +27,7 @@
     </view>
 
     <!--编辑模块-->
-    <view class="editBlock">
+    <view class="editBlock" bindtap="onEditClick">
         <image class="editImg" src="/assets/img/mine_middle.png"/>
         <view class="editHandle" bindtap="onEditClick" wx:if="{{manifests.length > 0}}">
             <text class="iconfont icon-bianjiyuanwangicon iconEdit"></text>
@@ -47,7 +47,7 @@
         </scroll-view>
         <view class="mask" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd"></view>
     </view>
-    <view class="manifestAddBlock" wx:else>
+    <view class="manifestAddBlock" binttap="onEditClick" wx:else>
         <image class="addBtn" src="/assets/img/add_btn.png" bindtap="onEditClick"/>
         <text class="addText">添加愿望</text>
     </view>

@@ -58,5 +58,9 @@ Page({
 
     onLotteryClick() {
         page.navigateTo({url: '/pages/lottery/lottery'});
+    },
+
+    onEditClick() {
+        page.navigateTo({url: '/pages/edit/edit'})
     }
 });
