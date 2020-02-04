@@ -7,6 +7,7 @@ const DELAY = 5000;
 
 Page({
     data: {
+        isImmediateRedirect: false,
         timer: undefined
     },
 
@@ -20,6 +21,7 @@ Page({
         } else {
             count += 1;
             setStorageSync(STORAGE_SPLASH_COUNT, count);
+            this.data.isImmediateRedirect = true;
             page.redirectTo({url: '/pages/index/index'})
         }
     },
@@ -27,6 +29,9 @@ Page({
     onImageLoadSuccess(event) {
         // 动画停留时间为5s 到时间切换至首页
         console.log('success', event);
+        if (this.data.isImmediateRedirect) {
+            return;
+        }
         let timer = setTimeout(() => {
             page.redirectTo({url: '/pages/index/index'})
         }, DELAY);
