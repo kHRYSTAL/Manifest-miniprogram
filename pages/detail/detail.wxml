@@ -30,7 +30,7 @@
                 帮ta实现愿望
             </view>
             <button open-type="share" class='shareBtn'>
-                <text class="iconfont icon-ren" style="font-size: 60rpx;"></text>
+                <text class="iconfont icon-wode" style="font-size: 40rpx;"></text>
                 分享我的清单
             </button>
         </view>
