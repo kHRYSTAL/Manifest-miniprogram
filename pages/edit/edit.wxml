@@ -1,4 +1,6 @@
 <view class="tips">至少填写六项</view>
+<painter bind:imgOK="onImgOK" bind:imgErr="onImgError" bind customStyle='position: absolute; left: -9999rpx;'
+         palette="{{template}}" bind:imgOK="onImgOK" widthPixels="1000"/>
 <view id="container">
     <view class="manifestBlock" wx:if="{{manifestList.length > 0}}">
         <block wx:for="{{manifestList}}" wx:for-item="content" wx:for-index='index' wx:key="key">
