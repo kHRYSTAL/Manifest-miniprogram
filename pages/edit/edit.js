@@ -137,7 +137,7 @@ Page({
                     scrollTop: res.height,
                     duration: 0,
                     success: (data) => {
-                        console.log(res);
+                        console.log(data);
                     },
                     fail: (error) => {
                         console.log(error);
