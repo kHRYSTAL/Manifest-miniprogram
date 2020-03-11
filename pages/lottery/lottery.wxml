@@ -1,6 +1,6 @@
 <view class="container">
     <view class="dollMachineContainer" bindtap="onClickMachine">
-        <image class="machineContent" src="{{dollMachine}}"></image>
+        <image class="machineContent" src="{{dollMachine}}" bindload="onImageShowSuccess" bindError="onImageShowError"></image>
         <image class="machineContent hide" src="{{dollMachinePreLoad1}}"></image>
         <image class="machineContent hide" src="{{dollMachinePreLoad2}}"></image>
         <image class="machineContent hide" src="{{dollMachinePreLoad3}}"></image>
